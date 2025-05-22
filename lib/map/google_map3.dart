@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:geolocator/geolocator.dart';
 
-class SimplifiedMapScreen extends StatefulWidget {
-  const SimplifiedMapScreen({super.key});
+class MapScreen extends StatefulWidget {
+  const MapScreen({super.key});
 
   @override
-  State<SimplifiedMapScreen> createState() => _SimplifiedMapScreenState();
+  State<MapScreen> createState() => _MapScreenState();
 }
 
-class _SimplifiedMapScreenState extends State<SimplifiedMapScreen> {
+class _MapScreenState extends State<MapScreen> {
   static const LatLng _initialPosition = LatLng(29.0635492, 80.1312196);
   late GoogleMapController _mapController;
   LatLng? _currentLocation;
